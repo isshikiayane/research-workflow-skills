@@ -2,6 +2,14 @@
 
 Reusable Codex Skills for protocol-governed research, especially machine learning and geospatial experiments.
 
+## 中文简介
+
+这是一套面向机器学习、遥感与地理空间科研的 Codex 工作流 Skills。它把研究问题一致性、数据泄漏、地理空间数据质量、实验执行、实验复核和科研结论审查连接为可追溯的 Gate 链，帮助研究者避免协议漂移、测试集泄漏，以及将 smoke/探索性结果误写为正式科研结论。
+
+适合需要冻结实验协议、按事件/区域/时间分组评估，或需要保留配置、随机种子、数据划分、日志与指标证据的研究项目。
+
+**关键词：** `codex-skill` · `research-workflow` · `research-integrity` · `machine-learning` · `data-leakage` · `reproducibility` · `geospatial` · `remote-sensing` · `spatial-validation` · `experiment-tracking` · `scientific-evidence` · `科研工作流` · `数据泄漏` · `可复现研究` · `地理空间数据`
+
 ## Included Skills
 
 - `research-question-audit` — verify that a planned or completed experiment still answers its frozen research question.
