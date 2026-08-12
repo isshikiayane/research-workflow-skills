@@ -1,0 +1,44 @@
+{
+  "expected_exit_code": 2,
+  "summary": {
+    "overall_status": "CANDIDATE_OVERLAP_FOUND",
+    "row_counts": {
+      "train": 2,
+      "validation": 2,
+      "test": 2
+    },
+    "checks": {
+      "id": {
+        "status": "OVERLAP_FOUND",
+        "shared_value_count": 1,
+        "samples": [
+          {
+            "value": "t2",
+            "splits": [
+              "test",
+              "train"
+            ]
+          }
+        ]
+      },
+      "group": {
+        "status": "NO_EXACT_OVERLAP_FOUND",
+        "shared_value_count": 0,
+        "samples": []
+      },
+      "coordinate": {
+        "status": "OVERLAP_FOUND",
+        "shared_value_count": 1,
+        "samples": [
+          {
+            "value": "101.000000,21.000000",
+            "splits": [
+              "train",
+              "validation"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

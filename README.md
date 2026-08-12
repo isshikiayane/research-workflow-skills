@@ -57,6 +57,18 @@ $data-leakage-audit Audit the proposed experiment before execution and return on
 - `geospatial-data-qc/scripts/inspect_raster_metadata.py` reads GeoTIFF metadata and compares candidate rasters with a reference. It requires `rasterio` and does not establish vertical-datum, semantic, or temporal compatibility.
 - `experiment-runner/references/e2e-gate-chain.md` demonstrates a complete protocol-governed admission, execution, audit, and evidence-review sequence.
 
+## Runnable Synthetic Examples
+
+The [`examples/`](examples/) directory contains tiny, fully synthetic inputs, expected summaries, and a verifier for two helpers. It demonstrates an expected split-overlap finding and an expected raster-grid mismatch without using any real research data.
+
+```text
+python examples/verify_examples.py --split-only
+python -m pip install rasterio
+python examples/verify_examples.py
+```
+
+See [`examples/README.md`](examples/README.md) for direct commands, expected exit codes, and interpretation limits.
+
 ## Scope and Limits
 
 These are workflow instructions and lightweight evidence helpers, not substitutes for a frozen protocol, domain review, or independent statistical validation. They preserve original data and require evidence-backed decisions.
