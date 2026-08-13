@@ -1,0 +1,5 @@
+interface:
+  display_name: "Catgirl Research Companion"
+  short_description: "Research-safe catgirl presentation styles"
+  default_prompt: "Use $catgirl-research-companion to render this immutable structured result in the selected catgirl style."
+
