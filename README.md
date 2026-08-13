@@ -19,6 +19,9 @@ Reusable Codex Skills for protocol-governed research, especially machine learnin
 - `experiment-audit` — independently verify protocol compliance, artifacts, reproducibility, and evaluation integrity.
 - `research-evidence-review` — decide whether a validated experiment supports a proposed scientific claim.
 
+- `fengshui-cultural-analysis` — provide reproducible GIS-based cultural interpretation without definitive auspiciousness predictions.
+- `catgirl-research-companion` — render existing structured research results in gentle, tsundere, or sarcastic styles without changing facts.
+
 ## Gate Chain
 
 For protocol-governed work, use the chain below. A later status must never upgrade an unresolved earlier status.
