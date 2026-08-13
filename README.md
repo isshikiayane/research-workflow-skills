@@ -1,21 +1,15 @@
 # Research Workflow Skills for Codex
 
+[简体中文](README.zh-CN.md)
+
 Reusable Codex Skills for protocol-governed research, especially machine learning and geospatial experiments.
-
-## 中文简介
-
-这是一套面向机器学习、遥感与地理空间科研的 Codex 工作流 Skills。它把研究问题一致性、数据泄漏、地理空间数据质量、实验执行、实验复核和科研结论审查连接为可追溯的 Gate 链，帮助研究者避免协议漂移、测试集泄漏，以及将 smoke/探索性结果误写为正式科研结论。
-
-适合需要冻结实验协议、按事件/区域/时间分组评估，或需要保留配置、随机种子、数据划分、日志与指标证据的研究项目。
-
-**关键词：** codex-skill · research-workflow · research-integrity · machine-learning · data-leakage · reproducibility · geospatial · remote-sensing · spatial-validation · experiment-tracking · scientific-evidence · 科研工作流 · 数据泄漏 · 可复现研究 · 地理空间数据
 
 ## Included Skills
 
 ### Research integrity and reproducibility
 
 - research-question-audit — verify that a planned or completed experiment still answers its frozen research question.
-- data-leakage-audit — audit train/validation/test, temporal, spatial, group, preprocessing, target, oracle, and evaluation leakage.
+- data-leakage-audit — audit train, validation, and test separation for temporal, spatial, group, preprocessing, target, oracle, and evaluation leakage.
 - geospatial-data-qc — quality-check geospatial inputs for CRS, datum, units, grid alignment, nodata, and temporal compatibility.
 - experiment-runner — run reproducible experiments only after required audit gates pass.
 - experiment-audit — independently verify protocol compliance, artifacts, reproducibility, and evaluation integrity.
@@ -25,8 +19,8 @@ Reusable Codex Skills for protocol-governed research, especially machine learnin
 
 - fengshui-cultural-analysis — provide reproducible GIS-based cultural interpretation without definitive auspiciousness predictions.
   - Separates objective spatial metrics from traditional cultural interpretation.
-  - Supports terrain, hydrology, water-relationship, enclosure, heuristic scoring, sensitivity, uncertainty, and limitations reporting.
-  - Treats missing optional data as a metric-specific degradation where possible.
+  - Supports terrain, hydrology, water relationships, enclosure, heuristic scoring, sensitivity, uncertainty, and limitations reporting.
+  - Treats missing optional data as metric-specific degradation where possible.
 - catgirl-research-companion — render existing structured research results in gentle, tsundere, or sarcastic styles without changing facts.
   - Presentation-only rendering.
   - Structured results, metrics, gates, evidence levels, uncertainty, limitations, and conclusions remain immutable.
@@ -48,7 +42,7 @@ research-question-audit PASS
  research-evidence-review claim classification
 ```
 
-RUN_COMPLETE only means the approved run and its artifacts completed. VALID only means the run is sufficiently evidenced and protocol-compliant. Neither alone proves a scientific claim.
+RUN_COMPLETE only means that the approved run and its artifacts completed. VALID only means that the run is sufficiently evidenced and protocol-compliant. Neither alone proves a scientific claim.
 
 ## Installation
 
@@ -86,7 +80,7 @@ See [examples/README.md](examples/README.md) for direct commands, expected exit 
 
 These are workflow instructions and lightweight evidence helpers, not substitutes for a frozen protocol, domain review, or independent statistical validation. They preserve original data and require evidence-backed decisions.
 
-The fengshui-cultural-analysis Skill provides a reproducible cultural interpretation of spatial patterns, not divination, scientific causality, or a definitive auspiciousness prediction. The catgirl-research-companion Skill changes presentation only and must not alter structured research facts.
+The fengshui-cultural-analysis Skill provides reproducible cultural interpretation of spatial patterns, not divination, scientific causality, or definitive auspiciousness predictions. The catgirl-research-companion Skill changes presentation only and must not alter structured research facts.
 
 ## License
 
