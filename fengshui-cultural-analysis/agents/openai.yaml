@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fengshui Cultural Analysis"
+  short_description: "Reproducible GIS cultural interpretation"
+  default_prompt: "Use $fengshui-cultural-analysis to interpret these GIS terrain metrics as a reproducible cultural analysis with uncertainty."
+
